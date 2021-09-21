@@ -54,6 +54,8 @@ a:hover { text-decoration: underline; }
     display: grid;
     padding: 1vh 0;
     /* grid-auto-flow: row; */
+    background-color: #03a3df;
+    color: white;
 }
 .logo {
     width: 13vw;
@@ -169,13 +171,55 @@ button:hover {
 
 /* MARGINS LEFT AND RIGHT */
 .main-nav, .box-header, .box-main, .box-footer {
-    padding-left: 6vw;
+    padding-left: 7vw;
 }
 
 
+/* ----------------------- ABOUT PAGE */
+.about, .instructor { width: 70%;}
+.about h1 { 
+    text-transform: capitalize; 
+    padding: 3vh 0;
+}
+.box-main h5 { 
+    margin-top: 10vh;
+    text-transform:uppercase;
+    font-weight: normal;
+}
+.instructor {
+    padding: 7vh 5vw;
+    background-color: #1b447f;
+    color: white;
+    margin: 5vh 0;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.instructor img, .instructor div, .instructor h2 {
+    display: inline;
+    align-self: flex-start;
+    padding: 3vh 0;
+}
+.instructor img { margin-right: 2vw;}
+.instructor h2{ font-size: 1.8rem; }
+.instructor h4 {
+    color: #ecb722;
+    text-transform: uppercase;
+}
+.instructor p {
+    line-height: 1.6;
+}
+
+hr {    
+    background-color: #ecb722;
+    margin-top: 1vh;
+    height: 2px;
+    border: none;
+}
+
+/* ----------------------- END ABOUT PAGE */
 
 
-
+/* ----------------------- MEDIA */
 
 @media only screen and (max-width: 700px)  {
     .container {
@@ -212,4 +256,12 @@ button:hover {
         max-width: 90%;
     }
     .contact-footer p, .contact-footer h3 { line-height: .7rem; }
+    
+    /* -------- ABOUT PAGE */
+    .about, .instructor { width: 95%;}
+    .instructor {
+        grid-template-columns: 4fr;
+    }
+    .box-main h5 { margin-top: 5vh; }
+    /* -------- END ABOUT PAGE */
 }
