@@ -67,6 +67,9 @@ a:hover { text-decoration: underline; }
     /* padding: 1vh 0; */
     list-style: none;
 }
+.menu a {
+    color: white;
+}
 .hamburger {
     grid-column: 6;
     justify-self: end;
